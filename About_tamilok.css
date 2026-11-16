@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
+@import url('https://fonts.cdnfonts.com/css/genty-demo');
+@import url('https://fonts.cdnfonts.com/css/bauhaus-93');
+                
+*{
+	margin:0;
+	padding: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+	
+}
+body{
+	width: 100%;
+	scroll-behavior: smooth;
+	
+	
+}
+section{
+	padding: 20px;
+}
+.space{
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	gap: 20px;
+}
+/*header*/
+
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 1rem 10%;
+	background-color: transparent;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100;
+	backdrop-filter: blur(50px);
+}
+.logo{
+	font-size: 4rem;
+	color: #EF8257;
+	font-family: 'Genty Demo', sans-serif;
+	
+}
+	nav a{
+	bottom: 10px;	
+	position: relative;
+	font-family:'Calibri', sans-serif;
+	font-size: 1.5rem;
+	color: #262626;
+	margin-left: 6rem;
+	text-transform:none;
+	
+
+}
+nav a:before{
+	position: absolute;	
+	content: '';
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width: 100%;
+	background: #7d572e;
+	transform: scale(0);
+	transform-origin: right;
+	transition: transform .4s linear;
+	
+}
+nav a:hover:before{
+	transform: scale(1);
+	transform-origin: left;
+	
+}
+img{
+	transition: 1s;
+	
+}
+img:hover{
+	transform: scale(0.8);
+}
+/*intro*/
+.intro{
+	height: 100vh;
+    background-image: url('img/Untitled\ design.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    padding: 0;
+	flex-direction: column;
+	text-align: center;
+}
+	
+
+.intro h1{
+	font-family: 'Bauhaus 93', sans-serif;
+	font-size: 4rem;
+	font-weight: 700;
+	line-height: 1.3;
+	margin-bottom:1.5rem;
+}
+.intro h4{
+	font-family: "Shippori Antique", sans-serif;
+	font-weight: bold;
+	margin-bottom:1.5rem;
+}
+.intro button{
+	width: 4.02cm;
+	height: 1.47cm;
+	border:2px solid #C55A11;
+	border-radius:10px;
+	font-size:1rem;
+	color: white;
+	background: #C55A11;
+	transition: 0.3s ease;
+	cursor: pointer;
+}
+.intro button:hover{
+	transform: scale3d(1.03);
+	color:black;
+	background:transparent;
+}
+/* 1st section*/
+.home{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5rem;
+    padding: 30px;
+	background-color:EFF3EA;
+	border: none;
+	border-radius: 50px;
+}
+
+.home h1{
+	font-family: 'Bauhaus 93', sans-serif;
+	font-size: 4rem;
+	font-weight: 700;
+	line-height: 1.3;
+}
+.home h2{
+	font-family: "Shippori Antique", sans-serif;
+	font-weight: bold;
+	color: black;
+}
+span{
+	color: #C55A11;
+}
+.home p{
+	font-family: "Shippori Antique", sans-serif;
+	color: black;
+}
+.home img{
+	position: relative;
+	width: 50vw;
+	height:70vh;
+	border-radius:10px;
+}
+/* 2nd section */
+.home1{
+	justify-content: center;
+	align-items: center;
+	gap: 5rem;
+	padding:20px;
+	background-color:EFF3EA;
+	border: none;
+	border-radius: 50px;
+}
+.home1 .content{
+	display:flex;
+}
+
+.home1 h1{
+	font-family: 'Bauhaus 93', sans-serif;
+	font-size: 4rem;
+	font-weight: 700;
+	line-height: 1.3;
+}
+.home1 p{
+	font-family: "Shippori Antique", sans-serif;
+	color: black;
+	padding:30px;
+	
+}
+
+.home1 img{
+	position: relative;
+	width: 60vw;
+	height:55vh;
+	border-radius:10px;
+}
+/* 3rd page */
+.home2{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5rem;
+	background-color:EFF3EA;
+	border: none;
+	border-radius: 50px;
+}
+
+.home2 h1{
+	font-family: 'Bauhaus 93', sans-serif;
+	font-size: 4rem;
+	font-weight: 700;
+	line-height: 1.3;
+}
+.home2 p{
+	font-family: "Shippori Antique", sans-serif;
+	color: black;
+	padding:30px;
+	
+}
+
+.home2 img{
+	position: relative;
+	width: 70vw;
+	height:100vh;
+	border-radius:10px;
+}
+/* 4th page */
+.home3{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5rem;
+	
+}
+
+.home3 h1{
+	font-family: 'Bauhaus 93', sans-serif;
+	font-size: 4rem;
+	font-weight: 700;
+	line-height: 1.3;
+}
+.home3 p{
+	font-family: "Shippori Antique", sans-serif;
+	color: black;
+	padding:30px;
+	
+}
+
+.home3 img{
+	position: relative;
+	width: 70vw;
+	height:100vh;
+	border-radius:10px;
+}
+/* 5th page */
+
+.home4{
+	justify-content: center;
+	align-items: center;
+	gap: 5rem;
+	background-color:EFF3EA;
+	border: none;
+	border-radius: 50px;
+}
+
+.home4 .content{
+	display:flex;
+}
+.home4 h1{
+	font-family: 'Bauhaus 93', sans-serif;
+	font-size: 4rem;
+	font-weight: 700;
+	line-height: 1.3;
+}
+.home4 p{
+	font-family: "Shippori Antique", sans-serif;
+	color: black;
+	padding:30px;
+	
+}
+
+.home4 img{
+	position: relative;
+	width: 50vw;
+	height: 50vh;
+	border-radius:10px;
+}
+/* 6th section */
+.home5{
+	justify-content: center;
+	align-items: center;
+	gap: 5rem;
+	display:flex;
+	background-color:EFF3EA;
+	border: none;
+	border-radius: 50px;
+}
+
+.home5 h1{
+	font-family: 'Bauhaus 93', sans-serif;
+	font-size: 4rem;
+	font-weight: 700;
+	line-height: 1.3;
+}
+.home5 h4{
+	font-family: "Shippori Antique", sans-serif;
+	color: black;
+	
+	
+}
+.home5 p{
+	font-family: "Shippori Antique", sans-serif;
+	color: black;
+	padding:30px;
+	
+}
+
+.home5 img{
+	position: relative;
+	width: 40vw;
+	height: 45vh;
+	border-radius:10px;
+	margin-top: 10px;
+}
+.home5 .idn{
+	font-family: 'Bauhaus 93', sans-serif;
+	font-weight:bold;
+	font-size: 2rem;
+}
+
+/* 7th section */
+.home6{
+	justify-content: center;
+	align-items: center;
+	gap: 5rem;
+	display:flex;
+	background-color:EFF3EA;
+	border: none;
+	border-radius: 50px;
+}
+
+.home6 h1{
+	font-family: 'Bauhaus 93', sans-serif;
+	font-size: 4rem;
+	font-weight: 700;
+	line-height: 1.3;
+}
+
+.home6 p{
+	font-family: "Shippori Antique", sans-serif;
+	color: black;
+	padding:30px;
+	
+}
+
+.home6 img{
+	position: relative;
+	width: 40vw;
+	height: 50vh;
+	border-radius:10px;
+}
+.home6 .idn{
+	font-family: 'Bauhaus 93', sans-serif;
+	font-weight:bold;
+	font-size: 2rem;
+}
+
+/* 8th section */
+.home7{
+	justify-content: center;
+	align-items: center;
+	gap: 5rem;
+	display:flex;
+	background-color:EFF3EA;
+	border: none;
+	border-radius: 50px;
+}
+
+.home7 h1{
+	font-family: 'Bauhaus 93', sans-serif;
+	font-size: 4rem;
+	font-weight: 700;
+	line-height: 1.3;
+}
+.home7 p{
+	font-family: "Shippori Antique", sans-serif;
+	color: black;
+	padding:30px;
+	
+}
+.home7 .idn{
+	font-family: 'Bauhaus 93', sans-serif;
+	font-weight:bold;
+	font-size: 2rem;
+
+}
+
+.home7 img{
+	position: relative;
+	width: 60vw;
+	height: 70vh;
+	border-radius:10px;
+}
+/* 8th section */
+.home8{
+	height: 100vh;
+    background-image: url('img/Untitled\ design\ \(3\).png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	justify-content: center;
+	align-items: center;
+	gap: 5rem;
+	display:flex;
+	background-color:EFF3EA;
+	border: none;
+	border-radius: 50px;
+}
+
+.home8 p{
+	font-family: "Shippori Antique", sans-serif;
+	color: black;
+	padding:30px;
+	
+}
+/* BACK TO TOP */
+
+html {
+	scroll-behavior: smooth;
+}
+
+.back-to-top {
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	background-color: #C55A11;
+	border-radius: 50%;
+	padding: 15px;
+	text-decoration: none;
+	transition: 0.2s ease-out;
+}
+
+.back-to-top span {
+	color: #fff;
+	font-size: 1rem;
+	transition: 0.2s ease-out;
+}
+
+.back-to-top:hover {
+	background-color: #ee6205;
+}
+.back-to-top:hover span {
+	transform: translateY(-4px);
+}
+
+/* footer */
+.footer{
+	background:#F8CBAD;
+	display: flex;
+	align-items: center;
+	gap: 5rem;
+	
+}
+.footer img{
+	position: relative;
+	width: 20vw;
+	border-radius:10px;
+}
