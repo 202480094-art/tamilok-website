@@ -1,0 +1,26 @@
+.back-to-top {
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	background-color: #C55A11;
+	border-radius: 50%;
+	padding: 15px;
+	text-decoration: none;
+	transition: 0.2s ease-out;
+}
+
+.back-to-top span {
+	color: #fff;
+	font-size: 1rem;
+	transition: 0.2s ease-out;
+}
+
+.back-to-top:hover {
+	background-color: #ee6205;
+}
+.back-to-top:hover span {
+	transform: translateY(-4px);
+}
